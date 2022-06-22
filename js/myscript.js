@@ -7,4 +7,7 @@ while (i < shoppingList.length){
     shoppingElement.innerHTML = shoppingList[i];
     document.getElementById('shopping-list').append(shoppingElement);
     i++;
+    shoppingElement.addEventListener('click',function(){
+        shoppingElement.setAttribute('style', 'text-decoration:line-through;');
+    })
 }
